@@ -8,8 +8,8 @@ The project combines **unsupervised learning** (K-Means) and **supervised learni
 
 The workflow is divided into two stages:
 
-1. **Customer segmentation** — identify customer groups with similar characteristics using K-Means.
-2. **Cluster classification** — use the cluster labels as targets for supervised models.
+1. **Customer segmentation** identify customer groups with similar characteristics using K-Means.
+2. **Cluster classification** use the cluster labels as targets for supervised models.
 
 This approach is useful when a dataset does not already contain a business segmentation label, but the resulting clusters need to be assigned consistently to future records.
 
@@ -59,7 +59,7 @@ One-Hot Encoding
 
 ## Dataset
 
-The original dataset contains **2,537 rows and 16 columns**. After missing-value removal, duplicate removal, feature selection, and outlier handling, **1,945 records** are used for clustering and classification.
+The original dataset contains **2,537 rows and 16 columns**. After missing value removal, duplicate removal, feature selection, and outlier handling, **1,945 records** are used for clustering and classification.
 
 The main numerical features are:
 
@@ -270,7 +270,7 @@ A few points are important when interpreting the results:
 
 - Compare K-Means with other clustering algorithms.
 - Evaluate cluster stability across multiple random seeds.
-- Use more suitable categorical-feature representations before clustering.
+- Use more suitable categorical feature representations before clustering.
 - Add confusion matrix and feature-importance analysis to the classification stage.
 - Wrap preprocessing and prediction into a single scikit-learn pipeline.
 - Expose the trained model through an API using Flask or FastAPI.
